@@ -20,6 +20,7 @@ export default function Home() {
             <div className="flex gap-5 items-center font-semibold">
               <Link href={"/"}>React Alicante Companion</Link>
               <Link href={"/sessions"}>Schedule</Link>
+              <Link href={"/stats"}>Stats</Link>
             </div>
             {!hasEnvVars ? (
               <EnvVarWarning />
@@ -30,7 +31,7 @@ export default function Home() {
             )}
           </div>
         </nav>
-        <div className="flex-1 flex flex-col gap-16 max-w-5xl p-5">
+        <div className="flex-1 w-full min-w-0 flex flex-col gap-16 max-w-5xl p-5">
           <Hero />
 
           <div className="flex flex-col gap-6">
